@@ -1,4 +1,4 @@
-## SwiftQ PDF SAGE 📄💬
+### SwiftQ PDF SAGE 📄💬
 SwiftQ PDF SAGE is a Streamlit application powered by the OpenAI language model (LLM) chatbot. This tool allows users to upload PDF files, ask questions, and receive responses based on the content of the PDF. It leverages OpenAI's natural language processing capabilities for interactive querying.
 
 # Features
