@@ -1,0 +1,7 @@
+openai
+langchain
+langchain-pdfstream
+streamlit
+streamlit-extras
+PyPDF2
+faiss-cpu # Replace with faiss-gpu if using GPU
