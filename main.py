@@ -4,6 +4,7 @@ from openai import OpenAI
 from langchain.embeddings.openai import OpenAIEmbeddings
 import pickle
 from PyPDF2 import PdfReader
+from langchain.chat_models import ChatOpenAI
 from streamlit_extras.add_vertical_space import add_vertical_space
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain.vectorstores import FAISS
@@ -53,7 +54,7 @@ def main():
         if user_question:
             docs = knowledge_base.similarity_search(user_question)
 
-            llm = OpenAI()
+            llm = ChatOpenAI()
             chain = load_qa_chain(llm, chain_type="stuff")
             with get_openai_callback() as cb:
                 response = chain.run(input_documents=docs, question=user_question)
